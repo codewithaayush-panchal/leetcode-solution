@@ -33,7 +33,7 @@ class Solution {
                 s = m + 1;
             }
         }
-        n = e + 1;
+        n = s;
         
         return Math.max(p, n);
     }
