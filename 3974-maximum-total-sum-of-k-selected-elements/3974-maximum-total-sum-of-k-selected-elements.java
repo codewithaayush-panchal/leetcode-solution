@@ -9,7 +9,9 @@ class Solution {
             } else {
                 total_sum += nums[i];
             }
-            mul--;
+            if (mul > 0) {
+                mul--;
+            }
             x++;
         }
         return total_sum;
