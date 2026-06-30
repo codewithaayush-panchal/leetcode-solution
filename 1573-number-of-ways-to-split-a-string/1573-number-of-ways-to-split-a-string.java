@@ -62,7 +62,7 @@ class Solution {
                 break;
             }
         }
-        long ans = (long)((sOf_2 - eOf_1)) * (sOf_3 - eOf_2);
+        long ans = (long)(sOf_2 - eOf_1) * (sOf_3 - eOf_2);
         int AnsF = (int)(ans % mod);
         return AnsF;
     }
