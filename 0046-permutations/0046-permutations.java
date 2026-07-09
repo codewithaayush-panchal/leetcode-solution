@@ -8,15 +8,13 @@ class Solution {
         List<List<Integer>> ans = new ArrayList<>();
 
         if (i == nums.length) {
+            ans.add(new ArrayList<>(arr));
             return ans;
         }
 
         for (int j = 0; j <= arr.size(); j++) {
             List<Integer> arr1 = new ArrayList<>(arr);
             arr1.add(j, nums[i]);
-            if (arr1.size() == nums.length) {
-                ans.add(arr1);
-            }
             ans.addAll(p(arr1, nums, i+1));
         }
 
