@@ -15,6 +15,7 @@ class Solution {
                 x++;
                 y--;
             }
+            return;
         }
         int min = 101;
         int index = -1;
@@ -28,9 +29,9 @@ class Solution {
         }
         {
             if (i != -1) {
-            int t = nums[i];
-            nums[i] = nums[index];
-            nums[index] = t;
+                int t = nums[i];
+                nums[i] = nums[index];
+                nums[index] = t;
             }
         }
         int x = i + 1;
