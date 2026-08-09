@@ -17,15 +17,9 @@ class Solution {
             temp = temp.next;
         }
         ListNode ans = head;
-        if (length % 2 == 0) {
-            for (int i = 0; i < length / 2; i++) {
+        for (int i = 0; i < length / 2; i++) {
                 ans = ans.next;
             }
-        }   else {
-            for (int i = 0; i < length / 2; i++) {
-                ans = ans.next;
-            }
-        }
         return ans;
     }
 }
